@@ -4,6 +4,11 @@ using Shared;
 
 namespace Filesystem;
 
+/// <summary>
+/// Generic wrapper functions for parsing JSON objects, also with <see cref="Identifier"/> and <see cref="ErrorHelper"/> support.
+/// <seealso cref="Identifier"/>
+/// <seealso cref="ErrorHelper"/>
+/// </summary>
 public static class JsonExtensions {
     public static bool TryGetNumber<TNumber>(this JsonObject self, string key, out TNumber value) {
         value = default!;
