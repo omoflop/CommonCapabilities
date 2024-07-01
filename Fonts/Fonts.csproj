@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="MonoGame.Framework">
+        <HintPath>..\..\..\.nuget\packages\monogame.framework.desktopgl\3.8.1.303\lib\net6.0\MonoGame.Framework.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Filesystem\Filesystem.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="SpriteFontPlus" Version="0.9.2" />
+    </ItemGroup>
+
+</Project>
